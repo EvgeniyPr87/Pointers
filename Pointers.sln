@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers", "Pointers\Pointers.vcxproj", "{E6D28069-5149-4ABA-B40E-4E695A60C870}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransferParametres", "TransferParametres\TransferParametres.vcxproj", "{677653AD-D2AE-4A24-A726-5A58ED2FF7D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyPointers", "MyPointers\MyPointers.vcxproj", "{30E8059B-EAAB-4B25-87E0-99295F55F3B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{677653AD-D2AE-4A24-A726-5A58ED2FF7D0}.Release|x64.Build.0 = Release|x64
 		{677653AD-D2AE-4A24-A726-5A58ED2FF7D0}.Release|x86.ActiveCfg = Release|Win32
 		{677653AD-D2AE-4A24-A726-5A58ED2FF7D0}.Release|x86.Build.0 = Release|Win32
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Debug|x64.ActiveCfg = Debug|x64
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Debug|x64.Build.0 = Debug|x64
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Debug|x86.Build.0 = Debug|Win32
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Release|x64.ActiveCfg = Release|x64
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Release|x64.Build.0 = Release|x64
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Release|x86.ActiveCfg = Release|Win32
+		{30E8059B-EAAB-4B25-87E0-99295F55F3B7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

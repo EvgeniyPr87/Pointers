@@ -4,7 +4,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void Exchenge(int a, int b);
+void Exchenge(int& a, int& b);
 void main() {
 
 	setlocale(LC_ALL, "");
@@ -14,7 +14,7 @@ void main() {
 	Exchenge(a, b);
 	cout << a << "\t" << b << endl;
 }
-void Exchenge(int a, int b)
+void Exchenge(int& a, int& b)
 {
 	int buffer = a;
 	a = b;
