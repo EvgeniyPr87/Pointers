@@ -1,4 +1,4 @@
-#include"stdafx.h"
+ï»¿#include"stdafx.h"
 
 void main()
 {
@@ -8,18 +8,18 @@ void main()
 	Random_array(array_numbers, size);
 	Print(array_numbers, size);
 	cout << lins << endl;
-	//ñîçäàåì ñ÷åò÷èêè ÷åòíûõ è íå÷åòíûõ ýëåìåíòîâ
+	//ÑÐ¾Ð·Ð´Ð°ÐµÐ¼ ÑÑ‡ÐµÑ‚Ñ‡Ð¸ÐºÐ¸ Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÑ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²
 	int even_count = 0;
 	int odd_count = 0;
-	//ñ÷èòàåì êîëè÷åñòâî ÷åòíûõ è íå÷åòíûõ ýëåìåíòîâ â ìàññèâå
+	//ÑÑ‡Ð¸Ñ‚Ð°ÐµÐ¼ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÑ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ
 	for (int i = 0; i < size; i++) {
 		if (array_numbers[i] % 2 == 0) even_count++;
 		else odd_count++;
 	}
-	//âûäåëÿåì äèíàìè÷åñêóþ ïàìÿòü ïîä ìàññèâû ÷åòíûõ è íå÷åòíûõ ÷èñåë
+	//Ð²Ñ‹Ð´ÐµÐ»ÑÐµÐ¼ Ð´Ð¸Ð½Ð°Ð¼Ð¸Ñ‡ÐµÑÐºÑƒÑŽ Ð¿Ð°Ð¼ÑÑ‚ÑŒ Ð¿Ð¾Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ñ‹ Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð¸ Ð½ÐµÑ‡ÐµÑ‚Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»
 	int* array_even = new int[even_count];
 	int* array_odd = new int[odd_count];
-	//çàïîëíÿåì ìàññèâû
+	//Ð·Ð°Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ Ð¼Ð°ÑÑÐ¸Ð²Ñ‹
 	for (int i = 0, j = 0, k = 0; i < size; i++) {
 		if (array_numbers[i] % 2 == 0) array_even[j++] = array_numbers[i];
 		else array_odd[k++] = array_numbers[i];
@@ -29,10 +29,10 @@ void main()
 	cout << od<<"\t";
 	Print(array_odd, odd_count);
 
-	//óäàëÿåì âûäåëåííóþ ïàìÿòü
+	//ÑƒÐ´Ð°Ð»ÑÐµÐ¼ Ð²Ñ‹Ð´ÐµÐ»ÐµÐ½Ð½ÑƒÑŽ Ð¿Ð°Ð¼ÑÑ‚ÑŒ
 	delete[]array_even;
 	delete[]array_odd;
-	//óäàëÿåì óêàçàòåëè íà óäàëåííóþ ïàìÿòü
+	//ÑƒÐ´Ð°Ð»ÑÐµÐ¼ ÑƒÐºÐ°Ð·Ð°Ñ‚ÐµÐ»Ð¸ Ð½Ð° ÑƒÐ´Ð°Ð»ÐµÐ½Ð½ÑƒÑŽ Ð¿Ð°Ð¼ÑÑ‚ÑŒ
 	array_even = nullptr;
 	array_odd = nullptr;
 	
